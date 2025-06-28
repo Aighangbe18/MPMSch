@@ -13,18 +13,19 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 z-10  bg-[url('../images/gallery11.jpg')] bg-cover bg-center h-screen w-full">
-      
-      </div>
+    <section id="hero" className="relative overflow-hidden bg-white text-black">
 
-      <div className="hero-layout">
-        {/* LEFT: Hero Content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-          <div className="flex flex-col gap-7">
-            <div className="hero-text text-white">
+      {/* HEADER with background image */}
+      <div className="relative mb-20">
+        {/* ✅ Background image with min height */}
+        <div className="absolute inset-0 min-h-[60vh] bg-[url('../images/gallery11.jpg')] bg-cover bg-center opacity-70 z-0" />
+
+        {/* ✅ Header content with same min height */}
+        <div className="relative z-10 min-h-[60vh] flex items-center md:px-20 px-5 py-20 text-white">
+          <header className="w-full flex flex-col gap-7">
+            <div className="hero-text">
               <h1>
-                Offering 
+                Offering{" "}
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word, index) => (
@@ -35,7 +36,7 @@ const Hero = () => {
                         <img
                           src={word.imgPath}
                           alt="person"
-                          className="xl:size-12 md:size-10 size-7  rounded-full"
+                          className="xl:size-12 md:size-10 size-7 rounded-full"
                         />
                         <span className="text-xl md:text-2xl">{word.text}</span>
                       </span>
@@ -44,24 +45,38 @@ const Hero = () => {
                 </span>
               </h1>
               <h1>in the most</h1>
-              <h1> effective quality</h1>
+              <h1>effective quality</h1>
             </div>
 
-            <p className="text-white-50 md:text-sm relative z-10 pointer-events-none">
+            <p className="text-white md:text-xl">
               We are invested in molding the future
             </p>
-
-    
-          </div>
-        </header>
-
-      </div>
-     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-5 z-10 relative">
-        <img src="../images/gallery3.jpg" alt="Visual 1" className="w-full h-auto" />
-        <img src="../images/gallery25.jpg" alt="Visual 2" className="w-full h-auto" />
+          </header>
+        </div>
       </div>
 
-      <AnimatedCounter />
+      {/* IMAGE GRID SECTION */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-10 bg-gray-100">
+        <div className="rounded-lg overflow-hidden shadow-md">
+          <img
+            src="../images/gallery3.jpg"
+            alt="Visual 1"
+            className="w-full h-80 object-cover"
+          />
+        </div>
+        <div className="rounded-lg overflow-hidden shadow-md">
+          <img
+            src="../images/gallery25.jpg"
+            alt="Visual 2"
+            className="w-full h-80 object-cover"
+          />
+        </div>
+      </div>
+
+      {/* COUNTER SECTION */}
+      <div className="bg-white py-10">
+        <AnimatedCounter />
+      </div>
     </section>
   );
 };

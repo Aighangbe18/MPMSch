@@ -33,7 +33,7 @@ const Navbar = () => {
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 text-xs py-3 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-4 text-xs py-3 flex items-center bg-indigo-950 justify-between">
         {/* Logo */}
         <div className="text-sm w-10 h-10 font-bold text-blue-600">
           <img src="./images/gallery10.jpg" alt="Logo" className="w-full h-full object-cover rounded-full" />
