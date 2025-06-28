@@ -38,7 +38,7 @@ const Hero = () => {
                           alt="person"
                           className="xl:size-12 md:size-10 size-7 rounded-full"
                         />
-                        <span className="text-xl md:text-5xl">{word.text}</span>
+                        <span className="text-lg md:text-5xl">{word.text}</span>
                       </span>
                     ))}
                   </span>

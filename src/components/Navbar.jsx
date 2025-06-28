@@ -33,7 +33,7 @@ const Navbar = () => {
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 text-xs py-3 flex items-center bg-indigo-950 justify-between">
+      <nav className="max-w-7xl mx-auto px-4 text-lg py-3 flex items-center bg-indigo-950 justify-between">
         {/* Logo */}
         <div className="text-2x1 w-10 h-10 font-bold text-blue-600">
           <img src="./images/gallery10.jpg" alt="Logo" className="w-full h-full object-cover rounded-full" />
@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className={`${scrolled ? "text-gray-800" : "text-gray-700"}`}
+            className={`${scrolled ? "text-white" : "text-white"}`}
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -81,7 +81,7 @@ const Navbar = () => {
           {/* Close button top right */}
           <div className="flex justify-end p-4">
             <button onClick={() => setMenuOpen(false)}>
-              <X size={28} className="text-gray-800" />
+              <X size={28} className="text-white" />
             </button>
           </div>
 

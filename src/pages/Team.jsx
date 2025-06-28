@@ -1,33 +1,73 @@
+import { motion } from "framer-motion";
 
-const Team = () =>  {
-  const members = [
-    { name: "Ayo Ayodele", role: "Piano Instructor" },
-    { name: "Adura Afe", role: "Guitar Coach" },
-    { name: "Clara Adams", role: "Vocal Trainer" },
-     { name: "Alice Smith", role: "Piano Instructor" },
-    { name: "Bob Johnson", role: "Guitar Coach" },
-    { name: "Clara Adams", role: "Vocal Trainer" },
-     { name: "Alice Smith", role: "Piano Instructor" },
-    { name: "Bob Johnson", role: "Guitar Coach" },
-    { name: "Clara Adams", role: "Vocal Trainer" },
-     { name: "Alice Smith", role: "Piano Instructor" },
-    { name: "Bob Johnson", role: "Guitar Coach" },
-    { name: "Clara Adams", role: "Vocal Trainer" },
-  ];
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
+const members = [
+  { name: "Ayodele Ayodeji", role: "Director I", image: "ay.jpg" },
+  { name: "Aduragbemi Afe", role: "Director II", image: "adura.jpg" },
+  { name: "Abigeal Ozallo", role: "Head of Administration", image: "abigael.jpg" },
+  { name: "Conscience Aighangbe", role: "Educational Manager", image: "conzy.jpg" },
+  { name: "Divine Osarodion", role: "Administrative Assistant", image: "divine.jpg" },
+  { name: "Kehinde Oladiran", role: "Welfare Officer", image: "kehinde.jpg" },
+  { name: "Praise Moses", role: "Social Media Supervisor", image: "praise.jpg" },
+  { name: "Daniel Akinwumi", role: "Graphics Designer", image: "ak.jpg" },
+  { name: "Theophilus Oladiran", role: "Piano Instructor", image: "theo.jpg" },
+];
+
+const Team = () => {
   return (
-    <section className="p-10 max-w-5xl bg-gray-200 mx-auto">
-      <h2 className="text-3xl font-bold mt-12 mb-6 text-center">Meet Our Team</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {members.map((m) => (
-          <div key={m.name} className="border p-4 rounded shadow-sm">
-            <div className="h-40 bg-gray-200 rounded mb-4" />
-            <h3 className="text-xl font-semibold">{m.name}</h3>
-            <p className="text-gray-600">{m.role}</p>
-          </div>
-        ))}
-      </div>
+    <section className="text-black bg-white">
+      {/* Header with background image */}
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
+        className="relative mt-12 bg-[url('/images/gallery12.jpg')] bg-cover bg-center min-h-[50vh] flex items-center justify-center"
+      >
+        <div className="absolute inset-0 bg-opacity-60 z-0" />
+        <div className="relative z-10 text-center px-4 text-white">
+          <h1 className="text-4xl md:text-5xl font-bold">Our Team</h1>
+          <p className="text-base mt-2 text-white/80">
+            The Molders
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Team Grid */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        className="p-10 max-w-6xl mx-auto"
+      >
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {members.map((m, i) => (
+            <motion.div
+              key={i}
+              className="border rounded-lg p-4 shadow hover:shadow-md transition duration-300 bg-white"
+              whileHover={{ scale: 1.03 }}
+            >
+              <img
+                src={`/images/${m.image}`}
+                alt={m.name}
+                className="w-full h-60 object-cover rounded-md mb-4"
+              />
+              <h3 className="text-xl font-semibold">{m.name}</h3>
+              <p className="text-gray-600">{m.role}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </section>
   );
 };
+
 export default Team;
