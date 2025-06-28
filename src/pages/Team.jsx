@@ -29,7 +29,7 @@ const Team = () => {
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
-        className="relative mt-12 bg-[url('/images/gallery12.jpg')] bg-cover bg-center min-h-[50vh] flex items-center justify-center"
+        className="relative mt-8 bg-[url('../images/gallery12.jpg')] bg-cover bg-center min-h-[50vh] flex items-center justify-center"
       >
         <div className="absolute inset-0 bg-opacity-60 z-0" />
         <div className="relative z-10 text-center px-4 text-white">
@@ -56,7 +56,7 @@ const Team = () => {
               whileHover={{ scale: 1.03 }}
             >
               <img
-                src={`/images/${m.image}`}
+                src={`../images/${m.image}`}
                 alt={m.name}
                 className="w-full h-60 object-cover rounded-md mb-4"
               />

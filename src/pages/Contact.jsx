@@ -48,7 +48,7 @@ const Contact = () => {
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
-        className="relative mt-8 bg-[url('/images/gallery12.jpg')] bg-cover bg-center min-h-[50vh] flex items-center justify-center"
+        className="relative mt-8 bg-[url('../images/gallery12.jpg')] bg-cover bg-center min-h-[50vh] flex items-center justify-center"
       >
         <div className="absolute inset-0 pt-8 bg-opacity-60 z-0" />
         <div className="relative z-10 text-center px-4">

@@ -3,7 +3,6 @@ import Hero from "./pages/Hero";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import Gallery from "./pages/Gallery";
-import News from "./pages/News";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -17,7 +16,6 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/news" element={<News />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
