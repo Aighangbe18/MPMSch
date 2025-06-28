@@ -28,7 +28,7 @@ const Gallery = () => {
   const images = Array.from({ length: 25 }, (_, i) => baseImages[i % baseImages.length]);
 
   return (
-    <section className="p-10 bg-black/60 text-white">
+    <section className="p-10 bg-black text-white">
       <h2 className="text-3xl font-bold mb-6 text-center mt-12">Gallery</h2>
       <div className="grid md:grid-cols-3 gap-4">
         {images.map((img, i) => (

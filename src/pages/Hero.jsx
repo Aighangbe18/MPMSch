@@ -38,7 +38,7 @@ const Hero = () => {
                           alt="person"
                           className="xl:size-12 md:size-10 size-7 rounded-full"
                         />
-                        <span className="text-xl md:text-3xl">{word.text}</span>
+                        <span className="text-xl md:text-5xl">{word.text}</span>
                       </span>
                     ))}
                   </span>
@@ -48,7 +48,7 @@ const Hero = () => {
               <h1>effective quality</h1>
             </div>
 
-            <p className="text-blue-950 md:text-xl">
+            <p className="text-blue-950 text-xl md:text-2xl">
               We are invested in molding the future
             </p>
           </header>
@@ -56,7 +56,7 @@ const Hero = () => {
       </div>
 
       {/* IMAGE GRID SECTION */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-9 px-6 py-10 bg-gray-100">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-9 px-6 py-10 bg-white">
         <div className="rounded-lg overflow-hidden shadow-md">
           <img
             src="../images/gallery3.jpg"
