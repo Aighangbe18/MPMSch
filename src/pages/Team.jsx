@@ -15,6 +15,7 @@ const members = [
   { name: "Abigeal Ozallo", role: "Head of Administration", image: "abigael.jpg" },
   { name: "Conscience Aighangbe", role: "Educational Manager", image: "conzy.jpg" },
   { name: "Divine Osarodion", role: "Administrative Assistant", image: "divine.jpg" },
+    { name: "David Popoola", role: "Communication Officer", image: "david.jpg" },
   { name: "Kehinde Oladiran", role: "Welfare Officer", image: "kehinde.jpg" },
   { name: "Praise Moses", role: "Social Media Supervisor", image: "praise.jpg" },
   { name: "Daniel Akinwumi", role: "Graphics Designer", image: "ak.jpg" },
@@ -58,7 +59,7 @@ const Team = () => {
               <img
                 src={`../images/${m.image}`}
                 alt={m.name}
-                className="w-full h-60 object-cover rounded-md mb-4"
+                className="w-full h-70 object-cover rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold">{m.name}</h3>
               <p className="text-gray-600">{m.role}</p>
