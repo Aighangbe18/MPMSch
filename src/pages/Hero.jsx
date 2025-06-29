@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="relative z-10 min-h-[70vh] flex items-center md:px-20 px-5 py-20 text-white">
           <header className="w-full flex flex-col gap-7">
             <div className="hero-text">
-              <h1>
+              <h1 className="text-3xl md:text-7xl">
                 Offering{" "}
                 <span className="slide">
                   <span className="wrapper">
@@ -36,16 +36,16 @@ const Hero = () => {
                         <img
                           src={word.imgPath}
                           alt="person"
-                          className="xl:size-12 md:size-10 size-7 rounded-full"
+                          className="xl:size-15 md:size-10 size-10 rounded-full"
                         />
-                        <span className="text-3x1 md:text-5xl">{word.text}</span>
+                        <span className="text-5x1 md:text-7xl">{word.text}</span>
                       </span>
                     ))}
                   </span>
                 </span>
               </h1>
-              <h1>in the most</h1>
-              <h1>effective quality</h1>
+              <h1 className="text-3xl md:text-7xl">in the most</h1>
+              <h1 className="text-3xl md:text-7xl">effective quality</h1>
             </div>
 
            
@@ -59,14 +59,14 @@ const Hero = () => {
           <img
             src="../images/gallery15.jpg"
             alt="Visual 1"
-            className="w-full h-100 object-cover"
+            className="w-full h-120 object-cover"
           />
         </div>
         <div className="rounded-lg overflow-hidden shadow-md">
           <img
             src="../images/gallery25.jpg"
             alt="Visual 2"
-            className="w-full h-100 object-cover"
+            className="w-full h-120 object-cover"
           />
         </div>
       </div>
