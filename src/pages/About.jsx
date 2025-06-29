@@ -65,7 +65,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-semibold text-blue-800 mb-4">Vision Statement</h2>
-            <p className="text-blue-800-700 leading-relaxed">
+            <p className="text-blue-800 leading-relaxed">
               A place where quality culture of music is molded from solid foundation to mastery.
             </p>
           </div>
