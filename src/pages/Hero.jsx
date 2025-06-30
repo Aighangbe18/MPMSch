@@ -72,14 +72,14 @@ const Hero = () => {
           <img
             src="../images/gallery15.jpg"
             alt="Visual 1"
-            className="w-full h-150 object-cover"
+            className="w-full h-130 object-cover"
           />
         </div>
         <div className="rounded-lg overflow-hidden shadow-md">
           <img
             src="../images/gallery25.jpg"
             alt="Visual 2"
-            className="w-full h-150 object-cover"
+            className="w-full h-130  object-contain"
           />
         </div>
       </div>
