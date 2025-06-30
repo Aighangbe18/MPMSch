@@ -160,7 +160,7 @@ const Contact = () => {
                     name="name"
                     required
                     placeholder="John Doe"
-                    className="w-full px-4 py-3 rounded-md border text-xs border-gray-300 focus:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-3 bg-gray-500 rounded-md border text-xs border-gray-300 focus:ring-2 focus:ring-primary"
                   />
                 </div>
                 <div>
@@ -176,7 +176,7 @@ const Contact = () => {
                     type="email"
                     required
                     placeholder="john@example.com"
-                    className="w-full px-4 py-3 rounded-md border text-xs border-gray-300 focus:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-3  bg-gray-500 rounded-md border text-xs border-gray-300 focus:ring-2 focus:ring-primary"
                   />
                 </div>
                 <div>
@@ -192,7 +192,7 @@ const Contact = () => {
                     rows="4"
                     required
                     placeholder="Hello, I'd like to talk about..."
-                    className="w-full px-4 py-3 rounded-md text-xs border border-gray-300 resize-none focus:ring-2 focus:ring-primary"
+                    className="w-full bg-gray-500 px-4 py-3 rounded-md text-xs border border-gray-300 resize-none focus:ring-2 focus:ring-primary"
                   />
                 </div>
                 <button
